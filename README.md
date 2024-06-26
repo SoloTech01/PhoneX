@@ -14,7 +14,7 @@ pkg install python3
 
 pkg install pip
 
-git clone https://termux.com/SoloTech01/PhoneX.git
+git clone https://github.com/SoloTech01/PhoneX.git
 
 cd PhoneX
 
