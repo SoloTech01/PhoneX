@@ -24,4 +24,4 @@ pip install -r requirements.txt
 
 cd PhoneX
 
-python3 Phonex.py
+python3 phonex.py
