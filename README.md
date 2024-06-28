@@ -1,3 +1,5 @@
+**PHONEX IS A TOOL FOR VALIDATING AND GETTING INFORMATION ON PHONE NUMBER'S**
+
 **INSTALLATION OF TERMUX**
 
 Visit f-droid.org/en/packages/com.termux/ and download the termux app
