@@ -41,6 +41,11 @@ cd PhoneX
 
 python3 phonex.py
 
+**NOTE**
+
+Phone numbers generated with this tool are not necessarily valid,it only generates the numbers based on the specific country's phone number format.
+To check if the number(s) generated is valid,use the validate phone number feature of this tool and get info on the number using the get information feature
+
 **DISCLAIMER**
 
 This program was created for research and educational purposes and should not be used for any illegal activities as I will not be responsible for any misuse of the program
