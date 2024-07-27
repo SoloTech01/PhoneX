@@ -4,7 +4,7 @@
 
 - Get information about a phone number
 
-- Generate random numbers for multiple countries
+- Generate random phone numbers for multiple countries
 
 - Check if a phone number is registered on WhatsApp
 
