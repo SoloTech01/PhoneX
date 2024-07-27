@@ -33,9 +33,14 @@ def validate():
 				print(f"{GREEN}Validating.....")
 				time.sleep(3)
 				print(f"{RED}[x]{number} is not a valid phone number{RESET}")
-			time.sleep(2)
-			print(f"{LB}Refreshing.....{RESET}")
-			time.sleep(6)
+			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
+			if prompt == "y":
+				program_intro()
+			elif prompt == "n":
+				sys.exit()
+			else:
+				print("invalid prompt!")
+				sys.exit()
 
 def get_info():
 	valid = False
@@ -60,8 +65,14 @@ def get_info():
 [✓]-INTERNET SERVICE PROVIDER(ISP): {isp} {RESET}
 """)
 			time.sleep(2)
-			print(f"{LB}Refreshing.....{RESET}")
-			time.sleep(12)
+			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
+			if prompt == "y":
+				program_intro()
+			elif prompt == "n":
+				sys.exit()
+			else:
+				print("invalid prompt!")
+				sys.exit()
 
 def program_intro():
 	os.system("clear")
@@ -327,6 +338,14 @@ def program_intro():
 		print(".......")
 		time.sleep(1)
 		wv.verifier(phone_number)
+		prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
+		if prompt == "y":
+				program_intro()
+		elif prompt == "n":
+				sys.exit()
+		else:
+				print("invalid prompt!")
+				sys.exit()
 				
 	elif option == "5":
 		print(f"{GREEN}Updating PhoneX.....{RESET}")
