@@ -338,6 +338,7 @@ def program_intro():
 		print(".......")
 		time.sleep(1)
 		wv.verifier(phone_number)
+		time.sleep(5)
 		prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
 		if prompt == "y":
 				program_intro()
