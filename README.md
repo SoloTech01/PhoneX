@@ -48,6 +48,6 @@ To check if the number(s) generated is valid,use the validate phone number featu
 
 **DISCLAIMER**
 
-This program was created for research and educational purposes and should not be used for any illegal activities as I will not be responsible for any misuse of the program
+This program was created for research and educational purposes and should not be used for any illegal activity as I will not be responsible for any misuse of the program
 
 **DON'T FORGET TO LEAVE A STAR✨**
