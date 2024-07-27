@@ -122,7 +122,7 @@ def program_intro():
 [7] Germany
 [8] China
 """)
-		country = input(f"{LB}<<<<<<<<<<<<<<<<Choose a valid option>>>>>>>>>>>>>>>>>>>").strip()
+		country = input(f"{LB}<<<<<<<<<<<<<<<<Choose a valid option>>>>>>>>>>>>>>>>>>>{RESET}").strip()
 		if country == "1":
 			valid = False
 			while not valid:
