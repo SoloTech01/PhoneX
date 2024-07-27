@@ -1,4 +1,17 @@
-**PHONEX IS A TOOL FOR VALIDATING AND GETTING INFORMATION ON PHONE NUMBERS**
+**PHONEX FEATURES**
+
+- Check if a phone number is valid
+
+- Get information about a phone number
+
+- Generate random numbers for multiple countries
+
+- Check if a phone number is registered on WhatsApp
+
+
+**VERSION**
+
+1.1
 
 **INSTALLATION OF TERMUX**
 
@@ -27,3 +40,5 @@ pip install -r requirements.txt
 cd PhoneX
 
 python3 phonex.py
+
+**
