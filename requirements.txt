@@ -1,3 +1,2 @@
 phonenumbers
 colorama
-pathlib
