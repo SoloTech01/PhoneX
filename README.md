@@ -11,7 +11,7 @@
 
 **OLD VERSIONS**
 
-**v 1.0**
+**1.0**
 
 features:
 
@@ -19,7 +19,7 @@ features:
 
 - get information on a specific phone number
 
-**v 1.1**
+**1.1**
 
 Added features: 
 
@@ -29,7 +29,7 @@ Added features:
 
 **CURRENT VERSION**
 
-1.2 
+**1.2**
 
 Added features: 
 
