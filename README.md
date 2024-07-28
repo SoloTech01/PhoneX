@@ -65,6 +65,10 @@ cd PhoneX
 
 python3 phonex.py
 
+**NOTE**
+
+There will be constant update so as to increase the number of countries available,it's okay to use the update feature regularly to check for updates
+
 **DISCLAIMER**
 
 This program was created for research and educational purposes and should not be used for any illegal activity as I will not be responsible for any misuse of the program
