@@ -86,7 +86,7 @@ def program_intro():
 	print(f"""{GREEN}
 [+] Tool name: PhoneX
 [+] Author: Solomon Adenuga
-[+] Version: 1.1
+[+] Version: 1.2
 [+] Github: https://github.com/SoloTech01
 [+] Whatsapp: +2348023710562
 """)
@@ -127,18 +127,50 @@ def program_intro():
 			valid = False
 			while not valid:
 				try:
-					num = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
+					num_valid_numbers = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
 					valid = True
 				except ValueError:
 					print(f"{RED}Enter a valid integer!!")
+			valid_phone_numbers = []
 			print(f"{GREEN}Generating.......")
 			time.sleep(2)
+			while len(valid_phone_numbers) < num_valid_numbers:
+			 	number = ng.gen_nigeria_number()
+			 	try:
+			 	   parsed_number = parse(number, None)
+			 	   if is_valid_number(parsed_number):
+			 	       valid_phone_numbers.append(number)
+			 	   else:
+			 	   	pass
+			 	except phonenumbers.phonenumberutil.NumberParseException:
+			 	   print(f"{RED}Error parsing number: {number}")
+			valid_phone_numbers = "\n".join(valid_phone_numbers)
+			print(f"{GREEN}{valid_phone_numbers}")
+			try:
+				path = Path("/storage/emulated/0/phonex")
+				path.mkdir(exist_ok=True)
+			except:
+				pass
 			
-			for number in range(0, num):
-				numbers_generated = ng.gen_nigeria_number()
-				print(numbers_generated)
+			try:
+				path2 = Path.cwd()/"phonex"
+				path2.mkdir()
+			except:
+				pass
 				
-			print("\n[+] Copy and save the phone numbers generated")
+			try:
+				with open(os.path.join( "/storage/emulated/0/phonex", "Nigeria phone numbers"), "w") as file:
+					file.write(valid_phone_numbers)
+					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Nigeria phone numbers ")
+			except:
+				pass
+			
+			try:
+				with open(os.path.join(path, "Nigeria phone numbers"), "w") as file2:
+					file2.write(valid_phone_numbers)
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+			except:
+				pass
 			
 			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
 			if prompt == "y":
@@ -153,18 +185,50 @@ def program_intro():
 			valid = False
 			while not valid:
 				try:
-					num = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
+					num_valid_numbers = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
 					valid = True
 				except ValueError:
 					print(f"{RED}Enter a valid integer!!")
+			valid_phone_numbers = []
 			print(f"{GREEN}Generating.......")
 			time.sleep(2)
+			while len(valid_phone_numbers) < num_valid_numbers:
+			 	number = ng.gen_usa_number()
+			 	try:
+			 	   parsed_number = parse(number, None)
+			 	   if is_valid_number(parsed_number):
+			 	       valid_phone_numbers.append(number)
+			 	   else:
+			 	   	pass
+			 	except phonenumbers.phonenumberutil.NumberParseException:
+			 	   print(f"{RED}Error parsing number: {number}")
+			valid_phone_numbers = "\n".join(valid_phone_numbers)
+			print(f"{GREEN}{valid_phone_numbers}")
+			try:
+				path = Path("/storage/emulated/0/phonex")
+				path.mkdir(exist_ok=True)
+			except:
+				pass
 			
-			for number in range(0, num):
-				numbers_generated = ng.gen_usa_number()
-				print(numbers_generated)
+			try:
+				path2 = Path.cwd()/"phonex"
+				path2.mkdir()
+			except:
+				pass
 				
-			print("\n[+] Copy and save the phone numbers generated")
+			try:
+				with open(os.path.join( "/storage/emulated/0/phonex", "Usa phone numbers"), "w") as file:
+					file.write(valid_phone_numbers)
+					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Usa phone numbers ")
+			except:
+				pass
+			
+			try:
+				with open(os.path.join(path, "Usa phone numbers"), "w") as file2:
+					file2.write(valid_phone_numbers)
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+			except:
+				pass
 			
 			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
 			if prompt == "y":
@@ -179,18 +243,50 @@ def program_intro():
 			valid = False
 			while not valid:
 				try:
-					num = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
+					num_valid_numbers = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
 					valid = True
 				except ValueError:
 					print(f"{RED}Enter a valid integer!!")
+			valid_phone_numbers = []
 			print(f"{GREEN}Generating.......")
 			time.sleep(2)
+			while len(valid_phone_numbers) < num_valid_numbers:
+			 	number = ng.gen_uk_number()
+			 	try:
+			 	   parsed_number = parse(number, None)
+			 	   if is_valid_number(parsed_number):
+			 	       valid_phone_numbers.append(number)
+			 	   else:
+			 	   	pass
+			 	except phonenumbers.phonenumberutil.NumberParseException:
+			 	   print(f"{RED}Error parsing number: {number}")
+			valid_phone_numbers = "\n".join(valid_phone_numbers)
+			print(f"{GREEN}{valid_phone_numbers}")
+			try:
+				path = Path("/storage/emulated/0/phonex")
+				path.mkdir(exist_ok=True)
+			except:
+				pass
 			
-			for number in range(0, num):
-				numbers_generated = ng.gen_uk_number()
-				print(numbers_generated)
+			try:
+				path2 = Path.cwd()/"phonex"
+				path2.mkdir()
+			except:
+				pass
 				
-			print("\n[+] Copy and save the phone numbers generated")
+			try:
+				with open(os.path.join( "/storage/emulated/0/phonex", "Uk phone numbers"), "w") as file:
+					file.write(valid_phone_numbers)
+					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Uk phone numbers ")
+			except:
+				pass
+			
+			try:
+				with open(os.path.join(path, "Uk phone numbers"), "w") as file2:
+					file2.write(valid_phone_numbers)
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+			except:
+				pass
 			
 			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
 			if prompt == "y":
@@ -201,22 +297,55 @@ def program_intro():
 				print("invalid prompt!")
 				sys.exit()
 				
+				
 		elif country == "4":
 			valid = False
 			while not valid:
 				try:
-					num = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
+					num_valid_numbers = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
 					valid = True
 				except ValueError:
 					print(f"{RED}Enter a valid integer!!")
+			valid_phone_numbers = []
 			print(f"{GREEN}Generating.......")
 			time.sleep(2)
+			while len(valid_phone_numbers) < num_valid_numbers:
+			 	number = ng.gen_canada_number()
+			 	try:
+			 	   parsed_number = parse(number, None)
+			 	   if is_valid_number(parsed_number):
+			 	       valid_phone_numbers.append(number)
+			 	   else:
+			 	   	pass
+			 	except phonenumbers.phonenumberutil.NumberParseException:
+			 	   print(f"{RED}Error parsing number: {number}")
+			valid_phone_numbers = "\n".join(valid_phone_numbers)
+			print(f"{GREEN}{valid_phone_numbers}")
+			try:
+				path = Path("/storage/emulated/0/phonex")
+				path.mkdir(exist_ok=True)
+			except:
+				pass
 			
-			for number in range(0, num):
-				numbers_generated = ng.gen_canada_number()
-				print(numbers_generated)
+			try:
+				path2 = Path.cwd()/"phonex"
+				path2.mkdir()
+			except:
+				pass
 				
-			print("\n[+] Copy and save the phone numbers generated")
+			try:
+				with open(os.path.join( "/storage/emulated/0/phonex", "Canada phone numbers"), "w") as file:
+					file.write(valid_phone_numbers)
+					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Canada phone numbers ")
+			except:
+				pass
+			
+			try:
+				with open(os.path.join(path, "Canada phone numbers"), "w") as file2:
+					file2.write(valid_phone_numbers)
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+			except:
+				pass
 			
 			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
 			if prompt == "y":
@@ -231,18 +360,50 @@ def program_intro():
 			valid = False
 			while not valid:
 				try:
-					num = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
+					num_valid_numbers = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
 					valid = True
 				except ValueError:
 					print(f"{RED}Enter a valid integer!!")
+			valid_phone_numbers = []
 			print(f"{GREEN}Generating.......")
 			time.sleep(2)
+			while len(valid_phone_numbers) < num_valid_numbers:
+			 	number = ng.gen_austrailia_number()
+			 	try:
+			 	   parsed_number = parse(number, None)
+			 	   if is_valid_number(parsed_number):
+			 	       valid_phone_numbers.append(number)
+			 	   else:
+			 	   	pass
+			 	except phonenumbers.phonenumberutil.NumberParseException:
+			 	   print(f"{RED}Error parsing number: {number}")
+			valid_phone_numbers = "\n".join(valid_phone_numbers)
+			print(f"{GREEN}{valid_phone_numbers}")
+			try:
+				path = Path("/storage/emulated/0/phonex")
+				path.mkdir(exist_ok=True)
+			except:
+				pass
 			
-			for number in range(0, num):
-				numbers_generated = ng.gen_austrailia_number()
-				print(numbers_generated)
+			try:
+				path2 = Path.cwd()/"phonex"
+				path2.mkdir()
+			except:
+				pass
 				
-			print("\n[+] Copy and save the phone numbers generated")
+			try:
+				with open(os.path.join( "/storage/emulated/0/phonex", "Austrailia phone numbers"), "w") as file:
+					file.write(valid_phone_numbers)
+					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Austrailia phone numbers ")
+			except:
+				pass
+			
+			try:
+				with open(os.path.join(path, "Austrailia phone numbers"), "w") as file2:
+					file2.write(valid_phone_numbers)
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+			except:
+				pass
 			
 			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
 			if prompt == "y":
@@ -257,18 +418,50 @@ def program_intro():
 			valid = False
 			while not valid:
 				try:
-					num = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
+					num_valid_numbers = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
 					valid = True
 				except ValueError:
 					print(f"{RED}Enter a valid integer!!")
+			valid_phone_numbers = []
 			print(f"{GREEN}Generating.......")
 			time.sleep(2)
+			while len(valid_phone_numbers) < num_valid_numbers:
+			 	number = ng.gen_india_number()
+			 	try:
+			 	   parsed_number = parse(number, None)
+			 	   if is_valid_number(parsed_number):
+			 	       valid_phone_numbers.append(number)
+			 	   else:
+			 	   	pass
+			 	except phonenumbers.phonenumberutil.NumberParseException:
+			 	   print(f"{RED}Error parsing number: {number}")
+			valid_phone_numbers = "\n".join(valid_phone_numbers)
+			print(f"{GREEN}{valid_phone_numbers}")
+			try:
+				path = Path("/storage/emulated/0/phonex")
+				path.mkdir(exist_ok=True)
+			except:
+				pass
 			
-			for number in range(0, num):
-				numbers_generated = ng.gen_india_number()
-				print(numbers_generated)
+			try:
+				path2 = Path.cwd()/"phonex"
+				path2.mkdir()
+			except:
+				pass
 				
-			print("\n[+] Copy and save the phone numbers generated")
+			try:
+				with open(os.path.join( "/storage/emulated/0/phonex", "India phone numbers"), "w") as file:
+					file.write(valid_phone_numbers)
+					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/India phone numbers ")
+			except:
+				pass
+			
+			try:
+				with open(os.path.join(path, "India phone numbers"), "w") as file2:
+					file2.write(valid_phone_numbers)
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+			except:
+				pass
 			
 			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
 			if prompt == "y":
@@ -283,18 +476,50 @@ def program_intro():
 			valid = False
 			while not valid:
 				try:
-					num = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
+					num_valid_numbers = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
 					valid = True
 				except ValueError:
 					print(f"{RED}Enter a valid integer!!")
+			valid_phone_numbers = []
 			print(f"{GREEN}Generating.......")
 			time.sleep(2)
+			while len(valid_phone_numbers) < num_valid_numbers:
+			 	number = ng.gen_germany_number()
+			 	try:
+			 	   parsed_number = parse(number, None)
+			 	   if is_valid_number(parsed_number):
+			 	       valid_phone_numbers.append(number)
+			 	   else:
+			 	   	pass
+			 	except phonenumbers.phonenumberutil.NumberParseException:
+			 	   print(f"{RED}Error parsing number: {number}")
+			valid_phone_numbers = "\n".join(valid_phone_numbers)
+			print(f"{GREEN}{valid_phone_numbers}")
+			try:
+				path = Path("/storage/emulated/0/phonex")
+				path.mkdir(exist_ok=True)
+			except:
+				pass
 			
-			for number in range(0, num):
-				numbers_generated = ng.gen_germany_number()
-				print(numbers_generated)
+			try:
+				path2 = Path.cwd()/"phonex"
+				path2.mkdir()
+			except:
+				pass
 				
-			print("\n[+] Copy and save the phone numbers generated")
+			try:
+				with open(os.path.join( "/storage/emulated/0/phonex", "Germany phone numbers"), "w") as file:
+					file.write(valid_phone_numbers)
+					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Germany phone numbers ")
+			except:
+				pass
+			
+			try:
+				with open(os.path.join(path, "Germany phone numbers"), "w") as file2:
+					file2.write(valid_phone_numbers)
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+			except:
+				pass
 			
 			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
 			if prompt == "y":
@@ -309,18 +534,50 @@ def program_intro():
 			valid = False
 			while not valid:
 				try:
-					num = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
+					num_valid_numbers = int(input(f"\n{YELLOW}Enter number of phone numbers to generate:{RESET} "))
 					valid = True
 				except ValueError:
 					print(f"{RED}Enter a valid integer!!")
+			valid_phone_numbers = []
 			print(f"{GREEN}Generating.......")
 			time.sleep(2)
+			while len(valid_phone_numbers) < num_valid_numbers:
+			 	number = ng.gen_china_number()
+			 	try:
+			 	   parsed_number = parse(number, None)
+			 	   if is_valid_number(parsed_number):
+			 	       valid_phone_numbers.append(number)
+			 	   else:
+			 	   	pass
+			 	except phonenumbers.phonenumberutil.NumberParseException:
+			 	   print(f"{RED}Error parsing number: {number}")
+			valid_phone_numbers = "\n".join(valid_phone_numbers)
+			print(f"{GREEN}{valid_phone_numbers}")
+			try:
+				path = Path("/storage/emulated/0/phonex")
+				path.mkdir(exist_ok=True)
+			except:
+				pass
 			
-			for number in range(0, num):
-				numbers_generated = ng.gen_china_number()
-				print(numbers_generated)
+			try:
+				path2 = Path.cwd()/"phonex"
+				path2.mkdir()
+			except:
+				pass
 				
-			print("\n[+] Copy and save the phone numbers generated")
+			try:
+				with open(os.path.join( "/storage/emulated/0/phonex", "China phone numbers"), "w") as file:
+					file.write(valid_phone_numbers)
+					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/China phone numbers ")
+			except:
+				pass
+			
+			try:
+				with open(os.path.join(path, "China phone numbers"), "w") as file2:
+					file2.write(valid_phone_numbers)
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+			except:
+				pass
 			
 			prompt = input(f"{LB}Do you want to continue (y/n):{RESET} ").lower().strip()
 			if prompt == "y":
