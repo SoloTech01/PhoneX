@@ -23,7 +23,7 @@ features:
 
 Added features: 
 
-- generate phone numbers for different countries
+- generate phone numbers for different countries (validity of all phone numbers is not guaranteed)
 
 - validate WhatsApp number
 
@@ -33,7 +33,7 @@ Added features:
 
 Added features: 
 
-- all phone numbers generated using the program exists and are 100% valid
+- all phone numbers generated using the program exists and are 100% valid (validity of all phone numbers is guaranteed)
 
 - saves phone numbers as a .txt file in both the current working directory and in the android general storage path in a folder "phonex"
 
