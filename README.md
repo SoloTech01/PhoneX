@@ -9,9 +9,17 @@
 - Check if a phone number is registered on WhatsApp
 
 
-**VERSION**
+**OLD VERSIONS**
 
-1.1
+1.1 Added features: -generate phone numbers for different countries
+
+- validate WhatsApp number
+
+**CURRENT VERSION**
+
+1.2 Added features: -all phone numbers generated using the program exists and are 100% valid
+
+-saves phone numbers as a .txt file in both the current working directory and in the android general storage path in a folder "phonex"
 
 **INSTALLATION OF TERMUX**
 
@@ -40,11 +48,6 @@ pip install -r requirements.txt
 cd PhoneX
 
 python3 phonex.py
-
-**NOTE**
-
-Phone numbers generated with this tool are not necessarily valid,it only generates the numbers based on the specific country's phone number format.
-To check if the number(s) generated is valid,use the validate phone number feature of this tool and get info on the number using the get information feature
 
 **DISCLAIMER**
 
