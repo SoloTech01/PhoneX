@@ -13,7 +13,9 @@
 
 1.1 
 
-Added features: -generate phone numbers for different countries
+Added features: 
+
+- generate phone numbers for different countries
 
 - validate WhatsApp number
 
@@ -21,7 +23,9 @@ Added features: -generate phone numbers for different countries
 
 1.2 
 
-Added features: -all phone numbers generated using the program exists and are 100% valid
+Added features: 
+
+- all phone numbers generated using the program exists and are 100% valid
 
 -saves phone numbers as a .txt file in both the current working directory and in the android general storage path in a folder "phonex"
 
