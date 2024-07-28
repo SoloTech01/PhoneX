@@ -1,13 +1,13 @@
 #print("CREATED BY SOLOMON ADENUGA (SOLOTECH01)")
 
-import random, os, sys, colorama
+#import random, os, sys, colorama
 
-colorama.init()
+'''colorama.init()
 green = colorama.Fore.GREEN
 blue = colorama.Fore.BLUE
 red = colorama.Fore.RED
 light_blue = colorama.Fore.LIGHTBLUE_EX
-yellow = colorama.Fore.YELLOW
+yellow = colorama.Fore.YELLOW'''
 
 def gen_usa_number():
     area_codes = [
