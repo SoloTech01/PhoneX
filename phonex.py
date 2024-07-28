@@ -151,24 +151,19 @@ def program_intro():
 				path.mkdir(exist_ok=True)
 			except:
 				pass
-			
+				
 			try:
-				path2 = Path.cwd()/"phonex"
-				path2.mkdir()
+				with open(os.path.join(path, "Nigeria phone numbers"), "w") as file:
+					file.write(valid_phone_numbers)
+					print(f"\n[✓] FILE SAVED SUCCESSFULLY!: {path}/Nigeria phone numbers ")
 			except:
 				pass
 				
-			try:
-				with open(os.path.join( "/storage/emulated/0/phonex", "Nigeria phone numbers"), "w") as file:
-					file.write(valid_phone_numbers)
-					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Nigeria phone numbers ")
-			except:
-				pass
 			
 			try:
-				with open(os.path.join(path, "Nigeria phone numbers"), "w") as file2:
+				with open("Nigeria phone numbers", "w") as file2:
 					file2.write(valid_phone_numbers)
-					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {Path.cwd()} ")
 			except:
 				pass
 			
@@ -209,24 +204,18 @@ def program_intro():
 				path.mkdir(exist_ok=True)
 			except:
 				pass
-			
-			try:
-				path2 = Path.cwd()/"phonex"
-				path2.mkdir()
-			except:
-				pass
 				
 			try:
-				with open(os.path.join( "/storage/emulated/0/phonex", "Usa phone numbers"), "w") as file:
+				with open(os.path.join(path, "Usa phone numbers"), "w") as file:
 					file.write(valid_phone_numbers)
-					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Usa phone numbers ")
+					print(f"\n[✓] FILE SAVED SUCCESSFULLY!: {path}/Usa phone numbers ")
 			except:
 				pass
 			
 			try:
-				with open(os.path.join(path, "Usa phone numbers"), "w") as file2:
+				with open("Usa phone numbers", "w") as file2:
 					file2.write(valid_phone_numbers)
-					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {Path.cwd()} ")
 			except:
 				pass
 			
@@ -267,24 +256,18 @@ def program_intro():
 				path.mkdir(exist_ok=True)
 			except:
 				pass
-			
-			try:
-				path2 = Path.cwd()/"phonex"
-				path2.mkdir()
-			except:
-				pass
 				
 			try:
-				with open(os.path.join( "/storage/emulated/0/phonex", "Uk phone numbers"), "w") as file:
+				with open(os.path.join(path, "Uk phone numbers"), "w") as file:
 					file.write(valid_phone_numbers)
-					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Uk phone numbers ")
+					print(f"\n[✓] FILE SAVED SUCCESSFULLY!: {path}/Uk phone numbers ")
 			except:
 				pass
 			
 			try:
-				with open(os.path.join(path, "Uk phone numbers"), "w") as file2:
+				with open("Uk phone numbers", "w") as file2:
 					file2.write(valid_phone_numbers)
-					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {Path.cwd()} ")
 			except:
 				pass
 			
@@ -326,24 +309,18 @@ def program_intro():
 				path.mkdir(exist_ok=True)
 			except:
 				pass
-			
-			try:
-				path2 = Path.cwd()/"phonex"
-				path2.mkdir()
-			except:
-				pass
 				
 			try:
-				with open(os.path.join( "/storage/emulated/0/phonex", "Canada phone numbers"), "w") as file:
+				with open(os.path.join( path, "Canada phone numbers"), "w") as file:
 					file.write(valid_phone_numbers)
-					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Canada phone numbers ")
+					print(f"\n[✓] FILE SAVED SUCCESSFULLY!: {path}/Canada phone numbers ")
 			except:
 				pass
 			
 			try:
-				with open(os.path.join(path, "Canada phone numbers"), "w") as file2:
+				with open("Canada phone numbers", "w") as file2:
 					file2.write(valid_phone_numbers)
-					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {Path.cwd()} ")
 			except:
 				pass
 			
@@ -386,22 +363,16 @@ def program_intro():
 				pass
 			
 			try:
-				path2 = Path.cwd()/"phonex"
-				path2.mkdir()
-			except:
-				pass
-				
-			try:
-				with open(os.path.join( "/storage/emulated/0/phonex", "Austrailia phone numbers"), "w") as file:
+				with open(os.path.join(path, "Austrailia phone numbers"), "w") as file:
 					file.write(valid_phone_numbers)
-					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Austrailia phone numbers ")
+					print(f"\n[✓] FILE SAVED SUCCESSFULLY!: {path}/Austrailia phone numbers ")
 			except:
 				pass
 			
 			try:
-				with open(os.path.join(path, "Austrailia phone numbers"), "w") as file2:
+				with open( "Austrailia phone numbers", "w") as file2:
 					file2.write(valid_phone_numbers)
-					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {Path.cwd()} ")
 			except:
 				pass
 			
@@ -442,24 +413,18 @@ def program_intro():
 				path.mkdir(exist_ok=True)
 			except:
 				pass
-			
-			try:
-				path2 = Path.cwd()/"phonex"
-				path2.mkdir()
-			except:
-				pass
 				
 			try:
-				with open(os.path.join( "/storage/emulated/0/phonex", "India phone numbers"), "w") as file:
+				with open(os.path.join(path, "India phone numbers"), "w") as file:
 					file.write(valid_phone_numbers)
-					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/India phone numbers ")
+					print(f"\n[✓] FILE SAVED SUCCESSFULLY!: {path}/India phone numbers ")
 			except:
 				pass
 			
 			try:
-				with open(os.path.join(path, "India phone numbers"), "w") as file2:
+				with open("India phone numbers", "w") as file2:
 					file2.write(valid_phone_numbers)
-					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {Path.cwd()} ")
 			except:
 				pass
 			
@@ -500,24 +465,18 @@ def program_intro():
 				path.mkdir(exist_ok=True)
 			except:
 				pass
-			
+	
 			try:
-				path2 = Path.cwd()/"phonex"
-				path2.mkdir()
-			except:
-				pass
-				
-			try:
-				with open(os.path.join( "/storage/emulated/0/phonex", "Germany phone numbers"), "w") as file:
+				with open(os.path.join(path, "Germany phone numbers"), "w") as file:
 					file.write(valid_phone_numbers)
-					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/Germany phone numbers ")
+					print(f"\n[✓] FILE SAVED SUCCESSFULLY!: {path}/Germany phone numbers ")
 			except:
 				pass
 			
 			try:
-				with open(os.path.join(path, "Germany phone numbers"), "w") as file2:
+				with open("Germany phone numbers", "w") as file2:
 					file2.write(valid_phone_numbers)
-					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {Path.cwd()} ")
 			except:
 				pass
 			
@@ -558,24 +517,18 @@ def program_intro():
 				path.mkdir(exist_ok=True)
 			except:
 				pass
-			
-			try:
-				path2 = Path.cwd()/"phonex"
-				path2.mkdir()
-			except:
-				pass
 				
 			try:
-				with open(os.path.join( "/storage/emulated/0/phonex", "China phone numbers"), "w") as file:
+				with open(os.path.join(path, "China phone numbers"), "w") as file:
 					file.write(valid_phone_numbers)
-					print("\n[✓] FILE SAVED SUCCESSFULLY!: /storage/emulated/0/phonex/China phone numbers ")
+					print(f"\n[✓] FILE SAVED SUCCESSFULLY!: {path}/China phone numbers ")
 			except:
 				pass
 			
 			try:
-				with open(os.path.join(path, "China phone numbers"), "w") as file2:
+				with open("China phone numbers", "w") as file2:
 					file2.write(valid_phone_numbers)
-					print(f"[✓] FILE SAVED SUCCESSFULLY!: {path2} ")
+					print(f"[✓] FILE SAVED SUCCESSFULLY!: {Path.cwd()} ")
 			except:
 				pass
 			
