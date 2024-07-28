@@ -35,7 +35,7 @@ Added features:
 
 - all phone numbers generated using the program exists and are 100% valid (validity of all phone numbers is guaranteed)
 
-- saves phone numbers as a .txt file in both the current working directory and in the android general storage path in a folder "phonex"
+- saves phone numbers as a .txt file in both the current working directory and in "/storage/emulated/0/" path in a folder "phonex"
 
 **INSTALLATION OF TERMUX**
 
