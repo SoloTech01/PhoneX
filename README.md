@@ -11,6 +11,14 @@
 
 **OLD VERSIONS**
 
+1.0
+
+features:
+
+- validate a phone number
+
+- get information on a specific phone number
+
 1.1 
 
 Added features: 
