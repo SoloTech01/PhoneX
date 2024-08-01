@@ -21,7 +21,7 @@ features:
 
 **1.1**
 
-Added features: 
+Updates: 
 
 - generate phone numbers for different countries (validity of all phone numbers is not guaranteed)
 
@@ -31,7 +31,7 @@ Added features:
 
 **1.2**
 
-Added features: 
+Updates: 
 
 - all phone numbers generated using the program exists and are 100% valid (validity of all phone numbers is guaranteed)
 
