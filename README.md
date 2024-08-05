@@ -27,8 +27,6 @@ Updates:
 
 - validate WhatsApp number
 
-**CURRENT VERSION**
-
 **1.2**
 
 Updates: 
@@ -36,6 +34,18 @@ Updates:
 - all phone numbers generated using the program exists and are 100% valid (validity of all phone numbers is guaranteed)
 
 - saves phone numbers as a .txt file in both the current working directory and in "/storage/emulated/0/" path in a folder "phonex"
+
+**CURRENT VERSION**
+
+**1.3**
+
+- added more countries to the phone number generator (France and Italy)
+
+- improved phone number generator range
+
+**HOW TO UPDATE**
+
+Use the update option in the main interface of the program,make sure you are connected to the internet before updating
 
 **INSTALLATION OF TERMUX**
 
