@@ -1,13 +1,13 @@
 #print("CREATED BY SOLOMON ADENUGA (SOLOTECH01)")
 
-#import random, os, sys, colorama
+import random, os, sys, colorama
 
-#colorama.init()
-#green = colorama.Fore.GREEN
-#blue = colorama.Fore.BLUE
-#red = colorama.Fore.RED
-#light_blue = colorama.Fore.LIGHTBLUE_EX
-#yellow = colorama.Fore.YELLOW
+colorama.init()
+green = colorama.Fore.GREEN
+blue = colorama.Fore.BLUE
+red = colorama.Fore.RED
+light_blue = colorama.Fore.LIGHTBLUE_EX
+yellow = colorama.Fore.YELLOW
 
 def gen_usa_number():
     area_codes = [
@@ -59,7 +59,7 @@ def gen_austrailia_number():
 
 def gen_nigeria_number():
 	area_codes = [
-703, 705, 806, 803, 705, 803, 807, 701, 708, 802, 809, 812]
+703, 705, 806, 803, 705, 803, 807, 701, 708, 802, 809, 812, 915, 904, 908]
 	area_code = random.choice(area_codes)
 	phone_number = f"+234 {area_code} {random.randint(100, 999)} {random.randint(1000, 9999)}"
 	return phone_number
@@ -86,7 +86,21 @@ def gen_india_number():
 		
 	return phone_number
 
-#def program_intro():	
+def gen_france_number():
+	area_codes = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+	area_code = random.choice(area_codes)
+	phone_number = f"+33 {area_code} {random.randint(10, 99)} {random.randint(10, 99)} {random.randint(10, 99)} {random.randint(10, 99)}"
 	
+	return phone_number
 
-	#country = input("<<<<<<<<<<<<<<<Choose a valid option>>>>>>>>>>>>>>>>").strip()
+def gen_italy_number():
+	area_codes = [2,6,11,15,19,30,31,35,41,45,49,51,521,522,532,55,59,70,71,75,80,81,85,89,90,91,95,961,984,99]
+	area_code = random.choice(area_codes)
+	if len(str(area_code)) == 2:
+		phone_number = f"+39 {area_code} {random.randint(10000000, 99999999)}"
+	elif len(str(area_code)) == 3:
+		phone_number = f"+39 {area_code} {random.randint(1000000, 9999999)}"
+	elif len(str(area_code)) == 4:
+		phone_number = f"+39 {area_code} {random.randint(100000, 999999)}"
+		
+	return phone_number
