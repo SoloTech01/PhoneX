@@ -39,7 +39,7 @@ Updates:
 
 **1.3**
 
-- added more countries to the phone number generator (France and Italy)
+- more countries available in the phone number generator (France and Italy)
 
 - improved phone number generator scope
 
