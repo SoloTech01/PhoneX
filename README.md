@@ -41,7 +41,7 @@ Updates:
 
 - added more countries to the phone number generator (France and Italy)
 
-- improved phone number generator range
+- improved phone number generator scope
 
 **HOW TO UPDATE**
 
